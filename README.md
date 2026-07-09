@@ -5,7 +5,7 @@ This toolkit bridges the gap between raw satellite data acquisition and advanced
 
 ## Key Features & Workflow
 
-* **AOI Definition:** You can download the .geojson of you Area of interest using this site [geojson.io] (https://geojson.io/?map=2.44/28.07216/17.93343#map=9.96/43.8972/11.8477)
+* **AOI Definition:** You can download the .geojson of you Area of interest using this site [geojson.io](https://geojson.io/?map=2.44/28.07216/17.93343#map=9.96/43.8972/11.8477)
 or you can extract the geographic coordinates of your Bounding Box using the [BBox Finder](https://bboxfinder.com/#0.000000,0.000000,0.000000,0.000000) tool to generate the bounding box coordinates needed for the scripts.
 * **Optimized Imagery Acquisition:** The core download scripts leverage the Sentinel Hub API to quickly fetch Sentinel-2 imagery. To bypass potential local memory errors, the pipeline automatically splits large AOIs into smaller, manageable tiles (Sentinel2.py script), but if yours is a small AOI you can run 2Sentinel2_NoTiles.py
 * **Solar Geometry Integration:** The download script expands upon official documentation by incorporating solar angle geometries, which are strictly required for the accurate downstream calculation of biophysical variables.
