@@ -44,7 +44,7 @@ conda deactivate
 </code></pre>
 <h2 id="launch-a-.py-script">Launch a .py script</h2>
 <p>Select the proper folder where the .py and other utils needed are stored.</p>
-<h3 id="select-directory">1. select directory</h3>
+<h3 id="select-directory">1. Select directory</h3>
 <p>On windows</p>
 <pre><code>cd "directory/path"
 </code></pre>
@@ -55,7 +55,7 @@ conda deactivate
 <p>or directly</p>
 <pre><code>cd "G:\FU\Anaconda\SEN2\Sentinel2_mosaicking_1image"
 </code></pre>
-<h3 id="launch-.py">launch .py</h3>
+<h3 id="launch-.py">Launch .py</h3>
 <pre><code>python Sentinel2_Multibands_mosaick.py
 </code></pre>
 <p>If we want to run it while we are using python environment</p>
