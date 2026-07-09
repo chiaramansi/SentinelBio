@@ -36,7 +36,7 @@ The provided scripts are fully operational and designed to run within isolated *
 
 You need a .geojson polygon inside the same directory where your script is host.
 
-If you are not familiar with working in Conda environment you can check this step by step guide.
+If you are not familiar with working in a Conda environment, you can check this [step-by-step guide](Conda.md).
 
 ## Acknowledgments
 The foundational download framework is built upon the official [SentinelHub Tutorial](https://sentinelhub-py.readthedocs.io/en/latest/sh.html). 
