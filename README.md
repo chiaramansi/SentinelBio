@@ -6,7 +6,7 @@ This toolkit bridges the gap between raw satellite data acquisition and advanced
 ## Key Features & Workflow
 
 * **AOI Definition:** To easily define and extract the geographic coordinates of your Area of Interest, you can use the [BBox Finder](https://bboxfinder.com/#0.000000,0.000000,0.000000,0.000000) tool to generate the bounding box coordinates needed for the scripts.
-* **Optimized Imagery Acquisition:** The core download scripts leverage the Sentinel Hub API to quickly fetch Sentinel-2 imagery. To bypass potential local memory errors, the pipeline automatically splits large AOIs into smaller, manageable tiles. 
+* **Optimized Imagery Acquisition:** The core download scripts leverage the Sentinel Hub API to quickly fetch Sentinel-2 imagery. To bypass potential local memory errors, the pipeline automatically splits large AOIs into smaller, manageable tiles (Sentinel2.py script), but if yours is a small AOI you can run 2Sentinel2_NoTiles.py
 * **Solar Geometry Integration:** The download script expands upon official documentation by incorporating solar angle geometries, which are strictly required for the accurate downstream calculation of biophysical variables.
 * **Biophysical Parameter Estimation:** The repository includes dedicated Python scripts (`.py`) to compute essential ecological indicators, specifically Leaf Area Index (**LAI**), Canopy Chlorophyll Content (**CCC**), and Normalized Difference Moisture Index (**NDMI**). 
 * **SNAP-Compliant Conversions:** To ensure scientific consistency with standard ESA software, linear conversion equations are needed to scale the raw $CCC$ and $LAI$ indices outputs into real-world biophysical values identical to those obtained via SNAP. The scaling equations implemented directly within our scripts are:
@@ -33,6 +33,10 @@ The provided scripts are fully operational and designed to run within isolated *
 > To access the data via API, you must create an **OAuth client** through the Copernicus Dashboard. Remember to save your OAuth Client ID and Secret Password immediately, as the password will not be shown again. 
 > 
 > Be cautious when running automated workflows: each request consumes processing credits, which are limited on a monthly basis. Keep an eye on your personal dashboard to monitor your remaining monthly credit allowance.
+
+You need a .geojson polygon inside the same directory where your script is host.
+
+If you are not familiar with working in Conda environment you can check this step by step guide.
 
 ## Acknowledgments
 The foundational download framework is built upon the official [SentinelHub Tutorial](https://sentinelhub-py.readthedocs.io/en/latest/sh.html). 
