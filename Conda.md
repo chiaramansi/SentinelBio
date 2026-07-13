@@ -8,7 +8,7 @@
 <ol>
 <li>
 <p>create a new environment choosing the name (you can also specify the python version and also specific packages you need, as rasterio in the example belo)</p>
-<pre><code>conda create  myenv python=3.10 rasterio 
+<pre><code>conda create -n myenv python=3.10 rasterio 
 </code></pre>
 </li>
 <li>
