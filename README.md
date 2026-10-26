@@ -2,6 +2,9 @@
 
 `SentinelBio` is an open-source repository providing areproducible workflow to automate the acquisition of Sentinel-2 satellite imagery and compute key forest biophysical parameters (CCC,LAI, NDMI). Designed to support ecological research these scripts have been used for evaluating dynamics in forest ecosystems linked to Land Surface Temperature (LST).
 This toolkit bridges the gap between raw satellite data acquisition and advanced ecological modeling.
+Please cite this paper (currently under review)
+"Explaining satellite-observed Land Surface Temperature of UNESCO Old-Growth Beech forests using structural and biophysical parameters"
+Chiara Mansi, Fabian Ewald Fassnacht 
 
 ## Key Features & Workflow
 
